@@ -1,0 +1,183 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #f3f5fa;
+  color: #182d47;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  width: min(960px, calc(100% - 36px));
+  margin: 0 auto;
+  padding: 17px 0 35px;
+}
+
+/* TITULLI */
+
+h1 {
+  margin: 0;
+
+  font-size: 29px;
+  font-weight: 700;
+
+  letter-spacing: -0.5px;
+}
+
+/* VIJA */
+
+.line {
+  height: 3px;
+
+  background-color: #087d76;
+
+  margin: 39px -18px 26px;
+}
+
+/* NAVIGIMI */
+
+nav {
+  display: flex;
+
+  gap: 18px;
+
+  margin-bottom: 20px;
+}
+
+nav a {
+  color: #1670a8;
+
+  font-size: 14px;
+
+  text-decoration: underline;
+}
+
+/* DATA */
+
+.date {
+  margin: 0 0 31px;
+
+  font-size: 14px;
+
+  color: #263b55;
+}
+
+/* CARDS */
+
+.cards {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 14px;
+}
+
+/* CARD */
+
+.card {
+  min-height: 363px;
+
+  background-color: white;
+
+  border: 1px solid #d2dce8;
+
+  border-radius: 8px;
+
+  padding: 32px 14px 17px;
+
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.02);
+}
+
+/* TITULLI I CARD */
+
+.card h2 {
+  margin: 0 0 17px;
+
+  font-size: 22px;
+
+  color: #162d48;
+}
+
+/* FOTO */
+
+.icon-area {
+  width: 184px;
+  height: 184px;
+
+  margin: 0 auto 8px;
+
+  background-color: #f1f3f6;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+
+/* SVG */
+
+.icon-area img {
+  width: 140px;
+  height: 140px;
+
+  object-fit: contain;
+}
+
+/* TEKSTI */
+
+.card > p {
+  margin: 0 0 17px 34px;
+
+  color: #263d5b;
+
+  font-size: 14px;
+
+  line-height: 1.55;
+}
+
+/* HISTORIA */
+
+details {
+  margin-left: 0;
+
+  font-size: 14px;
+
+  color: #263d5b;
+}
+
+summary {
+  cursor: pointer;
+
+  list-style-position: inside;
+}
+
+/* TEKSTI I FSHEHUR */
+
+.hidden {
+  margin: 10px 0 0 20px;
+
+  line-height: 1.5;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 760px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    max-width: 420px;
+
+    width: 100%;
+
+    margin: auto;
+  }
+
+  .line {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
