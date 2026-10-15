@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+}
+
+body { 
+    font-family: system-ui, sans-serif; 
+    margin: 1rem; 
+
+}
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.offers { 
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 2rem; 
+    border: 2px solid navy; 
+    box-sizing: content-box; 
+}
+.card{
+    width: 100%; 
+    min-width: 0;
+    border:1px solid blue;
+    margin: 1rem;
+    padding-left: 1rem;
+    overflow-wrap:anywhere ;
+}
+.card h2{
+    
+}
+a:focus { 
+    outline: none; 
+}
+a:focus-visible{
+    outline: 4px;
+    outline-offset: 3px solid red;
+}
+#regjistrimi{
+    overflow-wrap:anywhere ;
+}
+@media (min-width:1000px){
+    .offers{
+        grid-template-columns: repeat(3,1fr);
+    }
+
+}
