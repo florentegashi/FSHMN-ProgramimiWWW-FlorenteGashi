@@ -1,0 +1,156 @@
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: system-ui, sans-serif;
+    margin: 0;
+    background: #f2f5f8;
+    color: #243447;
+    line-height: 1.5;
+}
+
+/* Lidhja për kalim te përmbajtja */
+
+.skip-link {
+    position: absolute;
+    left: 10px;
+    top: -60px;
+    background: white;
+    color: black;
+    padding: 10px;
+    z-index: 10;
+}
+
+.skip-link:focus {
+    top: 10px;
+}
+
+/* Header */
+
+header {
+    background: #176b63;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Menuja me Flexbox */
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Fokus i dukshëm për tastierë */
+
+a:focus-visible {
+    outline: 3px solid orange;
+    outline-offset: 4px;
+}
+
+/* Përmbajtja */
+
+main {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+/* Imazhi fleksibil */
+
+.festival-img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Grid - një kolonë në telefon */
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+/* Kartat */
+
+.card {
+    min-width: 0;
+    background: white;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    padding: 20px;
+    overflow-wrap: anywhere;
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+.card p {
+    margin-bottom: 10px;
+}
+
+.card a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 12px;
+    background: #176b63;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.card a:hover {
+    background: #104c46;
+}
+
+/* Tablet: dy kolona */
+
+@media (min-width: 600px) {
+    .cards {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* Desktop: tri kolona */
+
+@media (min-width: 900px) {
+    .cards {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+/* Footer */
+
+footer {
+    background: #176b63;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
