@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, sans-serif;
+    margin: 0;
+    background: #f3f6fb;
+    color: #243b5a;
+}
+
+main {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 1rem 1.25rem 2rem;
+}
+
+h1 {
+    margin: 0 0 1.5rem;
+    font-size: 1.7rem;
+}
+
+hr {
+    border: 0;
+    border-top: 2px solid #176f70;
+    margin-bottom: 2rem;
+}
+
+.intro {
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+}
+
+.field {
+    margin-bottom: 1rem;
+}
+
+.field label {
+    display: block;
+    margin-bottom: 0.35rem;
+    font-size: 0.9rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+    display: block;
+    width: 150px;
+    min-height: 34px;
+    padding: 0.45rem 0.55rem;
+    border: 1px solid #aebbd0;
+    border-radius: 4px;
+    background: white;
+    font: inherit;
+}
+
+input[type="number"] {
+    width: 56px;
+}
+
+fieldset {
+    margin: 1.2rem 0;
+    padding: 0.8rem 1rem;
+    border: 1px solid #aebbd0;
+}
+
+legend {
+    padding: 0 0.3rem;
+}
+
+.radio-label {
+    display: block;
+    margin: 0.65rem 0;
+}
+
+.radio-label input {
+    margin-right: 0.35rem;
+}
+
+.rules {
+    margin: 1rem 0;
+}
+
+button {
+    border: 0;
+    border-radius: 5px;
+    padding: 0.65rem 1rem;
+    background: #147875;
+    color: white;
+    font: inherit;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #10625f;
+}
+
+table {
+    width: 100%;
+    margin-top: 1rem;
+    border-collapse: collapse;
+}
+
+caption {
+    margin-bottom: 0.35rem;
+}
+
+th,
+td {
+    border: 1px solid #b9c5d7;
+    padding: 0.65rem;
+    text-align: left;
+}
+
+th {
+    font-weight: 700;
+}
+
+.note {
+    max-width: 700px;
+    line-height: 1.6;
+}
+
+.back {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #147875;
+    font-weight: 600;
+}
